@@ -27,11 +27,9 @@ const addLiElement = function () {
     const list = document.querySelector('ul')
     for (let i = 0; i < 10; i++) {
         const liElement = document.createElement('li');
-        liElement.textContent = 'Element number ' + count;
-        liElement.style.fontSize = `${size}px`
+        liElement.textContent = 'Element number ' + count++;
+        liElement.style.fontSize = `${size++}px`
         list.appendChild(liElement)
-        count++;
-        size += 2
     }
 }
 

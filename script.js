@@ -16,6 +16,11 @@ const initiate = function () {
     document.body.appendChild(list);
 
     addBtn.addEventListener('click', addLiElement)
+    resetBtn.addEventListener('click', function () {
+        list.innerHTML = '';
+        size = 10;
+        count = 1
+    })
 }
 
 const addLiElement = function () {
@@ -29,6 +34,5 @@ const addLiElement = function () {
         size += 2
     }
 }
-
 
 initiate(addLiElement)
